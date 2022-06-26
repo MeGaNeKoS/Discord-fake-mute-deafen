@@ -9,8 +9,8 @@ Allows you to talk while muted/deafened in Discord Voice Chat
 3. Copy the code from [code.js](code.js) and execute in the console <br />
 4. Mute or deafen yourself.
 5. Unmute and undeafen, you'll now be able to talk normally, while others will see you as muted and/or deafen
-6. To revert it normal, you need to disconnect or move to other channel first, then come back.
-7. permanent revert? restart your discord or run this code `WebSocket.prototype.send = WebSocket.prototype.original`
+6. To revert it, you need to disconnect or move to other channel first, then come back.
+7. Permanent revert? restart your discord or run this code `WebSocket.prototype.send = WebSocket.prototype.original`
 
 # How it work?
 Discord using WebSocket to send data. So, Here will decode the data if it an ArrayBuffer. <br/>
