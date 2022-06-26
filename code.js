@@ -1,5 +1,5 @@
 // set an decoder
-const decoder = new TextDecoder("utf-8");
+let decoder = new TextDecoder("utf-8");
 
 if (WebSocket.prototype.original == undefined) {
     // store the original WebSocket
