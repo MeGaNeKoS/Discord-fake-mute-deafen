@@ -18,7 +18,5 @@ Next, it will check is there any `self_mutes` or `self_deafen` in the data.  <br
 If so, then if the value is `true` we forward the data to original WebSocket to tell the server we are on muted/deafened. <br/>
  <br/>
 If the value `false`, it gonna check the `guild_id` is `null` or not. If it `null`, then it will forward the data to original WebSocket to tell the server we want to disconnect from voice channel. then we set the `last_channel` to `null` <br/>
-if the data has guild id, then we check is the `last_channel` are in the data. If so, then we return. This data is the one will update our mute/deafen status.
+if the data has `guild id`, then we check is the `last_channel` are in the data. If so, then we return. This data is the one will update our mute/deafen status.
 otherwise, we will forward all other data, and store the last channel. <br/>
-
-code.js
