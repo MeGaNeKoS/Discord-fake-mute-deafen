@@ -12,6 +12,14 @@ Allows you to talk while muted/deafened in Discord Voice Chat
 6. To revert it, you need to disconnect or move to other channel first, then come back.
 7. Permanent revert? restart your discord or run this code `WebSocket.prototype.send = WebSocket.prototype.original`
 
+# Extras
+There is `3` mode available for now, which is:
+`0` for allowing stuck on `mute`/`deafen`
+`1` for stuck on `deafen` only
+`2` for back to normal
+
+To use it, just type `mode = ` followed by the mode. e.g `mode = 1`.
+
 # How it work?
 Discord using WebSocket to send data. So, Here will decode the data if it an ArrayBuffer. <br/>
 Next, it will check is there any `self_mutes` or `self_deafen` in the data.  <br/>
