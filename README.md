@@ -1,3 +1,6 @@
+# DISCONTINUED
+The newer and updated version on https://github.com/MeGaNeKoS/BetterDiscordPlugins/tree/main/FakeMuteDeafen
+
 # Discord Fake Deafen / Mute
 Allows you to talk while muted/deafened in Discord Voice Chat
 
